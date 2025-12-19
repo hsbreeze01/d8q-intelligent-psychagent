@@ -1,0 +1,53 @@
+# Python
+*.pyc
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Python虚拟环境
+venv/
+.venv/
+env/
+ENV/
+
+# 配置文件
+.env
+.env.local
+.env.*.local
+config.py
+
+# 日志文件
+*.log
+logs/
+
+# IDE相关文件
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# 测试输出
+.pytest_cache/
+htmlcov/
+.coverage
+.coverage.*
+
+# Node.js
+node_modules/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# 构建输出
+dist/
+build/
+
+# 其他
+*.pid
+*.seed
+*.pid.lock

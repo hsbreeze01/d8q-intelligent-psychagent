@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>股票实时信息获取</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/context7.js"></script>
+    <script src="js/app.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>股票实时信息获取</h1>
+        </header>
+        
+        <main>
+            <div class="search-section">
+                <input type="text" id="stockInput" placeholder="请输入股票代码或名称">
+                <button id="searchBtn">查询</button>
+            </div>
+            
+            <div class="stock-info" id="stockInfo" style="display: none;">
+                <div class="stock-header">
+                    <h2 id="stockName"></h2>
+                    <span id="stockCode"></span>
+                </div>
+                <div class="stock-price">
+                    <span id="currentPrice"></span>
+                    <span id="priceChange"></span>
+                </div>
+                <div class="stock-volume">
+                    <span>成交量: </span>
+                    <span id="volume"></span>
+                </div>
+            </div>
+            
+            <div class="chart-section">
+                <canvas id="stockChart"></canvas>
+            </div>
+        </main>
+        
+        <footer>
+            <p>股票数据由 akshare 提供</p>
+        </footer>
+    </div>
+</body>
+</html>
